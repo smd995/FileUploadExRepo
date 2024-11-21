@@ -31,6 +31,8 @@ public class ReplyServiceImpl implements ReplyService {
     public Long register(ReplyDTO replyDTO) {
         Reply reply = modelMapper.map(replyDTO, Reply.class);
 
+        log.info(reply);
+
         Long rno = replyRepository.save(reply).getRno();
 
         return rno;

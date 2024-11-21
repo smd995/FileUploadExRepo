@@ -48,6 +48,10 @@ public class ReplyController {
 
         resultMap.put("rno", rno);
 
+        // {
+        //   "rno" : 2
+        // }
+
         return resultMap;
     }
 
